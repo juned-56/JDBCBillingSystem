@@ -10,6 +10,7 @@ This folder contains a starter full-stack web application for a school managemen
 ```bash
 cd backend
 cp .env.example .env
+# Update DB_NAME, DB_USER, DB_PASSWORD, and DB_HOST in .env
 npm install
 npm run dev
 ```
