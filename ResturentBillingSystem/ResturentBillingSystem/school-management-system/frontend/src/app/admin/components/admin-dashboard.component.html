@@ -1,0 +1,19 @@
+<section>
+  <h2>Admin Module</h2>
+  <p>
+    Centralize governance, user access, and reporting from this module. Use the metrics to
+    monitor operational health.
+  </p>
+  <div class="summary-grid">
+    <div class="summary-card" *ngFor="let metric of metrics">
+      <h3>{{ metric.value }}</h3>
+      <p>{{ metric.label }}</p>
+    </div>
+  </div>
+  <div class="module-card">
+    <h3>Primary Responsibilities</h3>
+    <ul>
+      <li *ngFor="let item of responsibilities">{{ item }}</li>
+    </ul>
+  </div>
+</section>

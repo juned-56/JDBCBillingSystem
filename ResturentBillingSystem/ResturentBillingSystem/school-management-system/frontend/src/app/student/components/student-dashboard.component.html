@@ -1,0 +1,18 @@
+<section>
+  <h2>Student Module</h2>
+  <p>
+    Personalized access to learning resources, assignments, and academic progress.
+  </p>
+  <div class="summary-grid">
+    <div class="summary-card" *ngFor="let item of highlights">
+      <h3>{{ item.value }}</h3>
+      <p>{{ item.label }}</p>
+    </div>
+  </div>
+  <div class="module-card">
+    <h3>Quick Links</h3>
+    <ul>
+      <li *ngFor="let link of quickLinks">{{ link }}</li>
+    </ul>
+  </div>
+</section>

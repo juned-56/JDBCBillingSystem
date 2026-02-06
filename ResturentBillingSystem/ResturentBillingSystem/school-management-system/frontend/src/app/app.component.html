@@ -1,0 +1,17 @@
+<main>
+  <section>
+    <span class="badge">Angular + Node.js + Sequelize</span>
+    <h1>{{ title }}</h1>
+    <p>
+      This dashboard highlights the core modules for the school management system and
+      provides quick navigation to each area.
+    </p>
+    <div class="nav-links">
+      <a routerLink="/admin">Admin Module</a>
+      <a routerLink="/teachers">Teacher Module</a>
+      <a routerLink="/students">Student Module</a>
+    </div>
+  </section>
+
+  <router-outlet></router-outlet>
+</main>
