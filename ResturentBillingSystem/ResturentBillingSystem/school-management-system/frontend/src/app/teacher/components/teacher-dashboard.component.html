@@ -1,0 +1,23 @@
+<section>
+  <h2>Teacher Module</h2>
+  <p>
+    Stay on top of daily classes, attendance, and student progress with quick-access tools
+    tailored to instructors.
+  </p>
+  <div class="module-grid">
+    <div class="module-card">
+      <h3>Today's Schedule</h3>
+      <ul>
+        <li *ngFor="let item of schedule">
+          <strong>{{ item.period }}</strong> — {{ item.subject }}
+        </li>
+      </ul>
+    </div>
+    <div class="module-card">
+      <h3>Key Priorities</h3>
+      <ul>
+        <li *ngFor="let item of priorities">{{ item }}</li>
+      </ul>
+    </div>
+  </div>
+</section>
